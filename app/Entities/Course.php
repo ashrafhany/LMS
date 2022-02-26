@@ -44,5 +44,8 @@ class Course extends Model
     public function messages()
     {
         return $this->morphMany(Message::class, 'messageable')->with('user');
+
+
     }
+    
 }
